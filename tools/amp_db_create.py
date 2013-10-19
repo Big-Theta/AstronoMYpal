@@ -7,7 +7,7 @@ def create_db_tables():
     curs.execute("""
             CREATE TABLE user(
                 id          INTEGER PRIMARY KEY AUTOINCREMENT,
-                name        VARCHAR(100)
+                name        TEXT
             )
     """)
 
@@ -16,10 +16,10 @@ def create_db_tables():
                 id          INTEGER PRIMARY KEY AUTOINCREMENT,
                 ngc         INTEGER,
                 ic          INTEGER,
-                name        VARCHAR(100),
-                type        VARCHAR(100),
+                name        TEXT,
+                type        TEXT,
                 distance    REAL,
-                constellation   VARCHAR(100),
+                constellation   TEXT,
                 magnitude   REAL
             )
     """)
