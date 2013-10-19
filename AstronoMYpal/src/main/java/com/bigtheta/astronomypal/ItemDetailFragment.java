@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.bigtheta.astronomypal.dummy.DummyContent;
+import com.bigtheta.astronomypal.MenuContent.MainMenuContent;
 
 /**
  * A fragment representing a single Item detail screen.
@@ -25,7 +25,7 @@ public class ItemDetailFragment extends Fragment {
     /**
      * The dummy content this fragment is presenting.
      */
-    private DummyContent.DummyItem mItem;
+    private MainMenuContent.MainMenuItem mItem;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -42,7 +42,7 @@ public class ItemDetailFragment extends Fragment {
             // Load the dummy content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
-            mItem = DummyContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
+            mItem = MainMenuContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
         }
     }
 
@@ -53,6 +53,8 @@ public class ItemDetailFragment extends Fragment {
 
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
+            //TODO make this more interesting.
+            //Make the righthand side show a pretty picture.
             ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.content);
         }
 

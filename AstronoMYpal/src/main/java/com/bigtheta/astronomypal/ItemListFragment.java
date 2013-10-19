@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.bigtheta.astronomypal.dummy.DummyContent;
+import com.bigtheta.astronomypal.MenuContent.MainMenuContent;
 
 /**
  * A list fragment representing a list of Items. This fragment
@@ -30,7 +30,7 @@ public class ItemListFragment extends ListFragment {
      * The fragment's current callback object, which is notified of list item
      * clicks.
      */
-    private Callbacks mCallbacks = sDummyCallbacks;
+    private Callbacks mCallbacks = sMainMenuCallbacks;
 
     /**
      * The current activated item position. Only used on tablets.
@@ -53,7 +53,7 @@ public class ItemListFragment extends ListFragment {
      * A dummy implementation of the {@link Callbacks} interface that does
      * nothing. Used only when this fragment is not attached to an activity.
      */
-    private static Callbacks sDummyCallbacks = new Callbacks() {
+    private static Callbacks sMainMenuCallbacks = new Callbacks() {
         @Override
         public void onItemSelected(String id) {
         }
@@ -70,12 +70,12 @@ public class ItemListFragment extends ListFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // TODO: replace with a real list adapter.
-        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(
+        // Set the Main Menu content.
+        setListAdapter(new ArrayAdapter<MainMenuContent.MainMenuItem>(
                 getActivity(),
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
-                DummyContent.ITEMS));
+                MainMenuContent.ITEMS));
     }
 
     @Override
@@ -106,7 +106,7 @@ public class ItemListFragment extends ListFragment {
         super.onDetach();
 
         // Reset the active callbacks interface to the dummy implementation.
-        mCallbacks = sDummyCallbacks;
+        mCallbacks = sMainMenuCallbacks;
     }
 
     @Override
@@ -115,7 +115,7 @@ public class ItemListFragment extends ListFragment {
 
         // Notify the active callbacks interface (the activity, if the
         // fragment is attached to one) that an item has been selected.
-        mCallbacks.onItemSelected(DummyContent.ITEMS.get(position).id);
+        mCallbacks.onItemSelected(MainMenuContent.ITEMS.get(position).id);
     }
 
     @Override
