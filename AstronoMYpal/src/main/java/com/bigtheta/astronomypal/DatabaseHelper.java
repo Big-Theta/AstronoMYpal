@@ -7,6 +7,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.database.Cursor;
 
 import java.io.IOException;
 
@@ -18,30 +19,30 @@ import java.io.IOException;
 /**
  * Created by logan on 10/19/13.
  */
-public class DataBaseHelper extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
     private static String DB_PATH = "/data/data/com/bigtheta/astronomypal/databases/";
     private static String DB_NAME = "amp.db";
-    private SQLiteDatabase myDataBase;
-    private final Context myContext;
+    private SQLiteDatabase mDatabase = null;
+    private final Context mContext;
 
-    public DataBaseHelper(Context context) {
+    public DatabaseHelper(Context context) {
         super(context, DB_NAME, null, 1);
-        this.myContext = context;
+        this.mContext = context;
     }
 
-    public void createDataBase() throws IOException {
-        boolean dbExist = checkDataBase();
+    public void createDatabase() throws IOException {
+        boolean dbExist = checkDatabase();
         if (!dbExist) {
             this.getReadableDatabase();
             try {
-                copyDataBase();
+                copyDatabase();
             } catch (IOException e) {
                 throw new Error("Error copying database");
             }
         }
     }
 
-    private boolean checkDataBase() {
+    private boolean checkDatabase() {
         SQLiteDatabase checkDB = null;
         try {
             String myPath = DB_PATH + DB_NAME;
@@ -53,8 +54,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return checkDB != null ? true : false;
     }
 
-    private void copyDataBase() throws IOException {
-        InputStream myInput = myContext.getAssets().open(DB_NAME);
+    private void copyDatabase() throws IOException {
+        InputStream myInput = mContext.getAssets().open(DB_NAME);
         String outFileName = DB_PATH + DB_NAME;
         OutputStream myOutput = new FileOutputStream(outFileName);
         byte[] buffer = new byte[1024];
@@ -67,16 +68,16 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         myInput.close();
     }
 
-    public void openDataBase() throws SQLiteException{
+    public void openDatabase() throws SQLiteException{
         String myPath = DB_PATH + DB_NAME;
-        myDataBase = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
+        mDatabase = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READWRITE);
     }
 
     @Override
     public synchronized void close() {
 
-        if(myDataBase != null)
-            myDataBase.close();
+        if(mDatabase != null)
+            mDatabase.close();
 
         super.close();
 
@@ -90,8 +91,35 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
     }
 
+    private void initializeDatabase() {
+
+    }
+
+    public SQLiteDatabase getDatabase() {
+        if (mDatabase == null) {
+            openDatabase();
+        }
+        return mDatabase;
+    }
+
+    private static String[] tableUserColumns = {
+        "_id",
+        "name"
+    };
+
+    public String fooQuery() {
+        Cursor cursor = getDatabase().query(
+                "user", tableUserColumns, "name = ?",
+                new String[] {"John Smith"}, null, null, null);
+        cursor.moveToFirst();
+        String retval = cursor.getString(cursor.getColumnIndexOrThrow("name"));
+        cursor.close();
+        return retval;
+    }
+
+
 // Add your public helper methods to access and get content from the database.
-// You could return cursors by doing "return myDataBase.query(....)" so it'd be easy
+// You could return cursors by doing "return mDatabase.query(....)" so it'd be easy
 // to you to create adapters for your views.
 
 }

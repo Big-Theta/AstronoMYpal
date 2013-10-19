@@ -1,8 +1,11 @@
 package com.bigtheta.astronomypal;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+
+import java.io.IOException;
 
 
 /**
@@ -29,10 +32,20 @@ public class MainActivity extends FragmentActivity
      * device.
      */
     private boolean mTwoPane;
+    private DatabaseHelper mDatabaseHelper;
+    private SQLiteDatabase mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        mDatabaseHelper = new DatabaseHelper(this);
+        try {
+            mDatabaseHelper.createDatabase();
+        } catch (IOException ioe) {
+            throw new Error("Unable to create database");
+        }
+
         setContentView(R.layout.activity_item_list);
 
         if (findViewById(R.id.item_detail_container) != null) {
