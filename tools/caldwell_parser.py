@@ -39,6 +39,6 @@ def type_lookup(type_):
 
 # TODO: Constellation abbreviation transformation
 
-rows = [[i['ngc_id'], '', i['description'], type_lookup(i['type']), '',
+rows = [[None, i['ngc_id'], '', i['description'], type_lookup(i['type']), '',
        i['size'], i['constellation'], i['magnitude'],
        i['right_ascension'], i['declination'], ''] for i in data_list]

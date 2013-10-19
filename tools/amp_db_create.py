@@ -1,6 +1,8 @@
 import sqlite3
 import datetime
 
+import caldwell_parser
+
 conn = sqlite3.connect('amp.db')
 
 def create_db_tables():
@@ -122,7 +124,42 @@ def populate_mock_entries():
 
     conn.commit()
 
+def populate_caldwell_data(rows):
+    curs = conn.cursor()
+
+    # Insert stellar objects
+    stellar_object = ("INSERT INTO stellar_object VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")
+    for (row) in rows:
+        curs.execute(stellar_object, row)
+
+    # Create Caldwell docket
+    caldwell_docket = ("INSERT INTO docket VALUES(?, ?, ?)")
+    values = [(None, "Caldwell Partial Docket", 70),
+              (None, "Caldwell Complete Docket", 109)]
+    for value in values:
+        curs.execute(caldwell_docket, value)
+
+    # Get Caldwell docket ids
+    curs.fetchall()  # get rid of anything in there
+    for i in range(2):
+        curs.execute("SELECT _id FROM docket WHERE name='{}'".format(values[i][1]))
+    docket_id = curs.fetchall()
+
+    # Create docket items
+    caldwell_item = ("INSERT INTO docket_item VALUES (?, ?, ?)")
+
+    curs.fetchall()  # get rid of anything in there
+    for item in rows:
+        curs.execute("SELECT _id FROM stellar_object WHERE ngc_ic='{}'".format(item['ngc_id']))
+    item_ids = curs.fetchall()
+
+    for docket_id in docket_ids:
+        for item_id in item_ids:
+            curs.execute(caldwell_item, (None, docket_id, item_id))
+    conn.commit()
+
+
 if __name__ == '__main__':
     create_db_tables()
-    populate_mock_entries()
+    populate_caldwell_data(caldwell_parser.rows)
 
