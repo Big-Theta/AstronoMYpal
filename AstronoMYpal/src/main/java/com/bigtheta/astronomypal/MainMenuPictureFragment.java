@@ -1,4 +1,4 @@
-package com.bigtheta.astronomypal.dummy;
+package com.bigtheta.astronomypal;
 
 /**
  * Created by cevans on 10/19/13.
