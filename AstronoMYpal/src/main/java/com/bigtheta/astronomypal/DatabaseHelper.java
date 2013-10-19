@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.database.Cursor;
 
 import java.io.IOException;
+import android.util.Log;
 
 /*
  *  This file is modeled on:
@@ -20,8 +21,8 @@ import java.io.IOException;
  * Created by logan on 10/19/13.
  */
 public class DatabaseHelper extends SQLiteOpenHelper {
-    private static String DB_PATH = "/data/data/com/bigtheta/astronomypal/databases/";
-    private static String DB_NAME = "amp.db";
+    private static String DB_PATH = "/data/data/com.bigtheta.astronomypal/databases/";
+    private static String DB_NAME = "amp_db";
     private SQLiteDatabase mDatabase = null;
     private final Context mContext;
 
@@ -86,38 +87,57 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public void createDatabase() throws IOException {
+        Log.e("checking", "above");
         boolean dbExist = checkDatabase();
+        Log.e("checking", "below");
         if (!dbExist) {
+            Log.e("readableDatabase", "getting");
             this.getReadableDatabase();
+            Log.e("readableDatabase", "got");
             try {
+                Log.e("copying", "above");
                 copyDatabase();
+                Log.e("copying", "below");
             } catch (IOException e) {
                 throw new Error("Error copying database");
             }
         }
     }
 
-    private boolean checkDatabase() {
+    private boolean checkDatabase(){
         SQLiteDatabase checkDB = null;
-        try {
+        try{
             String myPath = DB_PATH + DB_NAME;
-            checkDB = SQLiteDatabase.openDatabase(
-                    myPath, null, SQLiteDatabase.OPEN_READONLY);
-        } catch(SQLiteException e) {
+            checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
+        }catch(SQLiteException e){
+        }
+
+        if(checkDB != null){
             checkDB.close();
         }
         return checkDB != null ? true : false;
     }
 
     private void copyDatabase() throws IOException {
+        Log.e("copyDatabase", "entering");
+        Log.e("DB_NAME", DB_NAME);
         InputStream myInput = mContext.getAssets().open(DB_NAME);
         String outFileName = DB_PATH + DB_NAME;
+        Log.e("DB_NAME", DB_NAME);
+        Log.e("db name", outFileName);
+        Log.e("tracker", "1");
         OutputStream myOutput = new FileOutputStream(outFileName);
+        Log.e("tracker", "2");
         byte[] buffer = new byte[1024];
+        Log.e("tracker", "3");
         int length;
-        while ((length = myInput.read(buffer))>0){
+        Log.e("tracker", "4");
+        while ((length = myInput.read(buffer)) > 0) {
+            Log.e("tracker", "5");
             myOutput.write(buffer, 0, length);
+            Log.e("tracker", "6");
         }
+        Log.e("tracker", "7");
         myOutput.flush();
         myOutput.close();
         myInput.close();

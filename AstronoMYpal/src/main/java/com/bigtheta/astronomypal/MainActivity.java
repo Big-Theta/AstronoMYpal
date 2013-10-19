@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.io.IOException;
+import android.util.Log;
 
 
 /**
@@ -41,6 +42,7 @@ public class MainActivity extends FragmentActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        Log.e("abc", "def");
         mDatabaseHelper = new DatabaseHelper(this);
         try {
             mDatabaseHelper.createDatabase();
