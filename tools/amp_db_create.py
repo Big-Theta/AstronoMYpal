@@ -74,6 +74,9 @@ def create_db_tables():
                 time        DATETIME,
                 conditions  TEXT,
                 description TEXT,
+                zipcode     INTEGER,
+                gps_latitude    REAL,
+                gps_longitude   REAL,
                 FOREIGN KEY(session_id) REFERENCES session(id),
                 FOREIGN KEY(stellar_object_id) REFERENCES stellar_object(id)
             )
