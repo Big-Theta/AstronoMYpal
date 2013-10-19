@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from string import strip
 
-data_file = '/Users/andrew/Documents/projects/hackathon/AstronoMYpal/caldwell'
+data_file = './caldwell_data'
 with open(data_file) as file_:
     data_list = file_.readlines()
 
