@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
+import android.widget.TextView;
 
 import java.io.IOException;
 
@@ -90,5 +92,8 @@ public class MainActivity extends FragmentActivity
             detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, id);
             startActivity(detailIntent);
         }
+    }
+    public void LoganHackTime(View view) {
+        ((TextView) findViewById(R.id.LoganHackTextView)).setText("And God killed another puppy.");
     }
 }
