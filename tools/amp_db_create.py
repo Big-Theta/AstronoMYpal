@@ -14,13 +14,16 @@ def create_db_tables():
     curs.execute("""
             CREATE TABLE stellar_object(
                 id          INTEGER PRIMARY KEY AUTOINCREMENT,
-                ngc         INTEGER,
-                ic          INTEGER,
+                ngc_ic      TEXT,
                 name        TEXT,
+                description TEXT,
                 type        TEXT,
                 distance    REAL,
+                size        TEXT,
                 constellation   TEXT,
-                magnitude   REAL
+                magnitude   REAL,
+                right_ascension TEXT,
+                declination TEXT
             )
     """)
 
