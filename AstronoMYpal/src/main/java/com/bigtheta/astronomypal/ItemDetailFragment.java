@@ -55,7 +55,7 @@ public class ItemDetailFragment extends Fragment {
         if (mItem != null) {
             //TODO make this more interesting.
             //Make the righthand side show a pretty picture.
-            ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.content);
+            //((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.content);
         }
 
         return rootView;

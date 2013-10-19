@@ -77,6 +77,24 @@
             android:id="@+id/mainMenuPictureView"
             android:layout_gravity="center"
             android:src="@drawable/tilt_shift_andromeda" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't touch me here"
+            android:id="@+id/LoganHackButton"
+            android:layout_gravity="left|top"
+            android:enabled="true"
+            android:onClick="LoganHackTime" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/LoganHackTextView"
+            android:layout_gravity="center_horizontal|top" />
+
     </FrameLayout>
 
 </LinearLayout>

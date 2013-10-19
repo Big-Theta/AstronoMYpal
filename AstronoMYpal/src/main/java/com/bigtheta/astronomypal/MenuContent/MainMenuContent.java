@@ -1,5 +1,9 @@
 package com.bigtheta.astronomypal.MenuContent;
 
+import android.app.Fragment;
+
+import com.bigtheta.astronomypal.ItemListFragment;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -22,10 +26,10 @@ public class MainMenuContent {
 
     static {
         // Add 4 sample items.
-        addItem(new MainMenuItem("1", "Start a New Session"));
-        addItem(new MainMenuItem("2", "View Past Session"));
-        addItem(new MainMenuItem("3", "Personal Settings"));
-        addItem(new MainMenuItem("4", "Achievements"));
+        addItem(new MainMenuItem("1", "Start a New Session", null));
+        addItem(new MainMenuItem("2", "View Past Session", null));
+        addItem(new MainMenuItem("3", "Personal Settings", null));
+        addItem(new MainMenuItem("4", "Achievements", null));
     }
 
     private static void addItem(MainMenuItem item) {
@@ -39,10 +43,12 @@ public class MainMenuContent {
     public static class MainMenuItem {
         public String id;
         public String content;
+        public Fragment subMenu;
 
-        public MainMenuItem(String id, String content) {
+        public MainMenuItem(String id, String content, Fragment subMenu) {
             this.id = id;
             this.content = content;
+            this.subMenu = subMenu;
         }
 
         @Override
