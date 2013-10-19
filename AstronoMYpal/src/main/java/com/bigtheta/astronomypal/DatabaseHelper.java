@@ -25,6 +25,61 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private SQLiteDatabase mDatabase = null;
     private final Context mContext;
 
+    private static final String[] tableUserColumns = {
+            "_id",
+            "name"
+    };
+
+    private static final String[] tableStellarObjectColumns = {
+            "_id",
+            "ngc_id",
+            "name",
+            "description",
+            "type",
+            "distance",
+            "size",
+            "constellation",
+            "magnitude",
+            "right_ascension",
+            "declination",
+            "img_name"
+    };
+
+    private static final String[] tableDocketColumns = {
+            "_id",
+            "name",
+            "observations"
+    };
+
+    private static final String[] tableDocketItemColumns = {
+            "_id",
+            "docket_id",
+            "stellar_object_id"
+    };
+
+    private static final String[] tableTelescopeColumns = {
+            "_id",
+            "name",
+            "type",
+            "manufacturer",
+            "aperture_in"
+    };
+
+    private static final String[] tableSessionColumns = {
+    };
+
+    private static final String[] tableSessionItemColumns = {
+            "_id",
+            "session_id",
+            "stellar_object_id",
+            "time",
+            "conditions",
+            "description",
+            "zipcode",
+            "gps_latitude",
+            "gps_longitude"
+    };
+
     public DatabaseHelper(Context context) {
         super(context, DB_NAME, null, 1);
         this.mContext = context;
@@ -101,11 +156,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         return mDatabase;
     }
-
-    private static String[] tableUserColumns = {
-        "_id",
-        "name"
-    };
 
     public String fooQuery() {
         Cursor cursor = getDatabase().query(

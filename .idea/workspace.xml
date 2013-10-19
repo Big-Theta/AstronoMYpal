@@ -12,8 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75301f82-d035-4323-abf1-09b14ed90b05" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DataBaseHelper.java" afterPath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DatabaseHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MainActivity.java" afterPath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DatabaseHelper.java" afterPath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DatabaseHelper.java" />
     </list>
     <ignored path="AstronoMYpal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,7 +97,7 @@
       <file leaf-file-name="DatabaseHelper.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="43" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.72386056" vertical-offset="1440" max-vertical-offset="2358">
+            <state line="164" column="4" selection-start="4358" selection-end="4358" vertical-scroll-proportion="0.62734586" vertical-offset="2484" max-vertical-offset="3258">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,7 +117,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="0" selection-start="3457" selection-end="3457" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="1800">
+            <state line="33" column="0" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -951,6 +950,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MainMenuPictureFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="270">
@@ -958,18 +966,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="3457" selection-end="3457" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="1800">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="43" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.72386056" vertical-offset="1440" max-vertical-offset="2358">
+        <state line="164" column="4" selection-start="4358" selection-end="4358" vertical-scroll-proportion="0.62734586" vertical-offset="2484" max-vertical-offset="3258">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

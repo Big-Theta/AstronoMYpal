@@ -13,4 +13,5 @@ install_manifest.txt
 *.out
 *.pyc
 *.db
+*.bin
 
