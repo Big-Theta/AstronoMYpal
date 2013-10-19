@@ -1,0 +1,1999 @@
+<table border="0"><tbody><tr bgcolor="#66ffff"><td width="24">
+					<b>C#</b></td>
+<td width="43">
+					<b>NGC/<br />
+					IC</b></td>
+<td width="32">
+					<b>Con.</b></td>
+<td width="48">
+					<b>Type</b></td>
+<td width="54">
+					<b>R. A.<br />
+					  h   m</b></td>
+<td width="51">
+					<b>Dec.<br />
+					    °   '</b></td>
+<td width="29">
+					<b>Mag.</b></td>
+<td width="70">
+					<b>Size ()</b></td>
+<td width="85">
+					<b>Description</b></td>
+</tr><tr><td width="24">
+					   1</td>
+<td width="43">
+					188</td>
+<td width="32">
+					Cep</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					00 44.4</td>
+<td width="51">
+					+85 20</td>
+<td width="29">
+					8.1</td>
+<td width="70">
+					14</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					   2</td>
+<td width="43">
+					40</td>
+<td width="32">
+					Cep</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					00 13.0</td>
+<td width="51">
+					+72 32</td>
+<td width="29">
+					11.6</td>
+<td width="70">
+					0.6</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					   3</td>
+<td width="43">
+					4236</td>
+<td width="32">
+					Dra</td>
+<td width="48">
+					SbG</td>
+<td width="54">
+					12 16.7</td>
+<td width="51">
+					+69 28</td>
+<td width="29">
+					9.7</td>
+<td width="70">
+					21 x 7</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					   4</td>
+<td width="43">
+					7023</td>
+<td width="32">
+					Cep</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					21 01.8</td>
+<td width="51">
+					+68 12</td>
+<td width="29">
+					6.8</td>
+<td width="70">
+					18 x 18</td>
+<td width="85">
+					Reflection Nebula</td>
+</tr><tr><td width="24">
+					   5</td>
+<td width="43">
+					IC<br />
+					342</td>
+<td width="32">
+					Cam</td>
+<td width="48">
+					SBcG</td>
+<td width="54">
+					03 46.8</td>
+<td width="51">
+					+68 06</td>
+<td width="29">
+					9.2</td>
+<td width="70">
+					18 x 17</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					   6</td>
+<td width="43">
+					6543</td>
+<td width="32">
+					Dra</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					17 58.6</td>
+<td width="51">
+					+66 38</td>
+<td width="29">
+					8.8</td>
+<td width="70">
+					0.3/5.8</td>
+<td width="85">
+					Cat's Eye Nebula</td>
+</tr><tr><td width="24">
+					   7</td>
+<td width="43">
+					2403</td>
+<td width="32">
+					Cam</td>
+<td width="48">
+					ScG</td>
+<td width="54">
+					07 36.9</td>
+<td width="51">
+					+65 36</td>
+<td width="29">
+					8.9</td>
+<td width="70">
+					18 x 10</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					   8</td>
+<td width="43">
+					559</td>
+<td width="32">
+					Cas</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					01 29.5</td>
+<td width="51">
+					+63 18</td>
+<td width="29">
+					9.5</td>
+<td width="70">
+					4</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					   9</td>
+<td width="43">
+					Sh2-155</td>
+<td width="32">
+					Cep</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					22 56.8</td>
+<td width="51">
+					+62 37</td>
+<td width="29">
+					7.7</td>
+<td width="70">
+					50 x 10</td>
+<td width="85">
+					Cave Nebula</td>
+</tr><tr><td width="24">
+					 10</td>
+<td width="43">
+					663</td>
+<td width="32">
+					Cas</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					01 46.0</td>
+<td width="51">
+					+61 15</td>
+<td width="29">
+					7.1</td>
+<td width="70">
+					16</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 11</td>
+<td width="43">
+					7635</td>
+<td width="32">
+					Cas</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					23 20.7</td>
+<td width="51">
+					+61 12</td>
+<td width="29">
+					7.0</td>
+<td width="70">
+					15 x 8</td>
+<td width="85">
+					Bubble Nebula</td>
+</tr><tr><td width="24">
+					 12</td>
+<td width="43">
+					6946</td>
+<td width="32">
+					Cep</td>
+<td width="48">
+					ScG</td>
+<td width="54">
+					20 34.8</td>
+<td width="51">
+					+60 09</td>
+<td width="29">
+					9.7</td>
+<td width="70">
+					11 x 9</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 13</td>
+<td width="43">
+					457</td>
+<td width="32">
+					Cas</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					01 19.1</td>
+<td width="51">
+					+58 20</td>
+<td width="29">
+					6.4</td>
+<td width="70">
+					13</td>
+<td width="85">
+					Phi Cas Cluster</td>
+</tr><tr><td width="24">
+					 14</td>
+<td width="43">
+					869/<br />
+					884</td>
+<td width="32">
+					Per</td>
+<td width="48">
+<p>O<br />
+						double<br />
+						C</p>
+</td>
+<td width="54">
+					02 20.0</td>
+<td width="51">
+					+57 08</td>
+<td width="29">
+					4.3</td>
+<td width="70">
+					30 and 30</td>
+<td width="85">
+					Sword Handle</td>
+</tr><tr><td width="24">
+					 15</td>
+<td width="43">
+					6826</td>
+<td width="32">
+					Cyg</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					19 44.8</td>
+<td width="51">
+					+50 31</td>
+<td width="29">
+					9.8</td>
+<td width="70">
+					0.5/2.3</td>
+<td width="85">
+					Blinking Nebula</td>
+</tr><tr><td width="24">
+					 16</td>
+<td width="43">
+					7243</td>
+<td width="32">
+					Lac</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					22 15.3</td>
+<td width="51">
+					+49 53</td>
+<td width="29">
+					6.4</td>
+<td width="70">
+					21</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 17</td>
+<td width="43">
+					147</td>
+<td width="32">
+					Cas</td>
+<td width="48">
+					dE4G</td>
+<td width="54">
+					00 33.2</td>
+<td width="51">
+					+48 30</td>
+<td width="29">
+					9.3</td>
+<td width="70">
+					13 x 8</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 18</td>
+<td width="43">
+					185</td>
+<td width="32">
+					Cas</td>
+<td width="48">
+					dE0G</td>
+<td width="54">
+					00 39.0</td>
+<td width="51">
+					+48 20</td>
+<td width="29">
+					9.2</td>
+<td width="70">
+					12 x 9</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 19</td>
+<td width="43">
+					IC<br />
+					5146</td>
+<td width="32">
+					Cyg</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					21 53.5</td>
+<td width="51">
+					+47 16</td>
+<td width="29">
+					10.0</td>
+<td width="70">
+					12 x 12</td>
+<td width="85">
+					Cocoon Neb</td>
+</tr><tr><td width="24">
+					 20</td>
+<td width="43">
+					7000</td>
+<td width="32">
+					Cyg</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					20 58.8</td>
+<td width="51">
+					+44 20</td>
+<td width="29">
+					6.0</td>
+<td width="70">
+					120 x 100</td>
+<td width="85">
+					Nort American Nebula</td>
+</tr><tr><td width="24">
+					 21</td>
+<td width="43">
+					4449</td>
+<td width="32">
+					CVn</td>
+<td width="48">
+					IG</td>
+<td width="54">
+					12 28.2</td>
+<td width="51">
+					+44 06</td>
+<td width="29">
+					9.4</td>
+<td width="70">
+					5 x 3</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 22</td>
+<td width="43">
+					7662</td>
+<td width="32">
+					And</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					23 25.9</td>
+<td width="51">
+					+42 33</td>
+<td width="29">
+					9.2</td>
+<td width="70">
+					0.3/2.2</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 23</td>
+<td width="43">
+					891</td>
+<td width="32">
+					And</td>
+<td width="48">
+					SbG</td>
+<td width="54">
+					02 22.6</td>
+<td width="51">
+					+42 21</td>
+<td width="29">
+					9.9</td>
+<td width="70">
+					14 x 2</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 24</td>
+<td width="43">
+					1275</td>
+<td width="32">
+					Per</td>
+<td width="48">
+					Seyfert<br />
+					G</td>
+<td width="54">
+					03 19.8</td>
+<td width="51">
+					+41 31</td>
+<td width="29">
+					11.6</td>
+<td width="70">
+					2.6 x 1</td>
+<td width="85">
+					Per A radio source</td>
+</tr><tr><td width="24">
+					 25</td>
+<td width="43">
+					2419</td>
+<td width="32">
+					Lyn</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					07 38.1</td>
+<td width="51">
+					+38 53</td>
+<td width="29">
+					10.4</td>
+<td width="70">
+					4.1</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 26</td>
+<td width="43">
+					4244</td>
+<td width="32">
+					CVn</td>
+<td width="48">
+					SG</td>
+<td width="54">
+					12 17.5</td>
+<td width="51">
+					+37 49</td>
+<td width="29">
+					10.6</td>
+<td width="70">
+					16 x 2.5</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 27</td>
+<td width="43">
+					6888</td>
+<td width="32">
+					Cyg</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					20 12.0</td>
+<td width="51">
+					+38 21</td>
+<td width="29">
+					7.5</td>
+<td width="70">
+					20 x 10</td>
+<td width="85">
+					Crescent Nebula</td>
+</tr><tr><td width="24">
+					 28</td>
+<td width="43">
+					752</td>
+<td width="32">
+					And</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					01 57.8</td>
+<td width="51">
+					+37 41</td>
+<td width="29">
+					5.7</td>
+<td width="70">
+					50</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 29</td>
+<td width="43">
+					5005</td>
+<td width="32">
+					CVn</td>
+<td width="48">
+					SbG</td>
+<td width="54">
+					13 10.9</td>
+<td width="51">
+					+37 03</td>
+<td width="29">
+					9.8</td>
+<td width="70">
+					5.4 x 2</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 30</td>
+<td width="43">
+					7331</td>
+<td width="32">
+					Peg</td>
+<td width="48">
+					SbG</td>
+<td width="54">
+					22 37.1</td>
+<td width="51">
+					+34 25</td>
+<td width="29">
+					9.5</td>
+<td width="70">
+					11 x 4</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 31</td>
+<td width="43">
+					IC<br />
+					405</td>
+<td width="32">
+					Aur</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					05 16.2</td>
+<td width="51">
+					+34 16</td>
+<td width="29">
+					6.0</td>
+<td width="70">
+					30 x 19</td>
+<td width="85">
+					Flaming Star Nebula</td>
+</tr><tr><td width="24">
+					 32</td>
+<td width="43">
+					4631</td>
+<td width="32">
+					CVn</td>
+<td width="48">
+					ScG</td>
+<td width="54">
+					12 42.1</td>
+<td width="51">
+					+32 32</td>
+<td width="29">
+					9.3</td>
+<td width="70">
+					15 x 3</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 33</td>
+<td width="43">
+					6992<br />
+					/5</td>
+<td width="32">
+					Cyg</td>
+<td width="48">
+					SN</td>
+<td width="54">
+					20 56.4</td>
+<td width="51">
+					+31 43</td>
+<td width="29">
+					--</td>
+<td width="70">
+					60 x 8</td>
+<td width="85">
+					East Veil Nebula</td>
+</tr><tr><td width="24">
+					 34</td>
+<td width="43">
+					6960</td>
+<td width="32">
+					Cyg</td>
+<td width="48">
+					SN</td>
+<td width="54">
+					20 45.7</td>
+<td width="51">
+					+30 43</td>
+<td width="29">
+					--</td>
+<td width="70">
+					70 x 6</td>
+<td width="85">
+					West Veil Nebula</td>
+</tr><tr><td width="24">
+					 35</td>
+<td width="43">
+					4889</td>
+<td width="32">
+					Com</td>
+<td width="48">
+					E4G</td>
+<td width="54">
+					13 00.1</td>
+<td width="51">
+					+27 59</td>
+<td width="29">
+					11.4</td>
+<td width="70">
+					3 x 2</td>
+<td width="85">
+					Brightest in cluster</td>
+</tr><tr><td width="24">
+					 36</td>
+<td width="43">
+					4559</td>
+<td width="32">
+					Com</td>
+<td width="48">
+					ScG</td>
+<td width="54">
+					12 36.0</td>
+<td width="51">
+					+27 58</td>
+<td width="29">
+					9.8</td>
+<td width="70">
+					10 x 4</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 37</td>
+<td width="43">
+					6885</td>
+<td width="32">
+					Vul</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					20 12.0</td>
+<td width="51">
+					+26 29</td>
+<td width="29">
+					5.7</td>
+<td width="70">
+					7</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 38</td>
+<td width="43">
+					4565</td>
+<td width="32">
+					Com</td>
+<td width="48">
+					SbG</td>
+<td width="54">
+					12 36.3</td>
+<td width="51">
+					+25 59</td>
+<td width="29">
+					9.6</td>
+<td width="70">
+					16 x 3</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 39</td>
+<td width="43">
+					2392</td>
+<td width="32">
+					Gem</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					07 29.2</td>
+<td width="51">
+					+20 55</td>
+<td width="29">
+					9.9</td>
+<td width="70">
+					0.2/0.7</td>
+<td width="85">
+					Eskimo Nebula</td>
+</tr><tr><td width="24">
+					 40</td>
+<td width="43">
+					3626</td>
+<td width="32">
+					Leo</td>
+<td width="48">
+					SbG</td>
+<td width="54">
+					11 20.1</td>
+<td width="51">
+					+18 21</td>
+<td width="29">
+					10.9</td>
+<td width="70">
+					3 x 2</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 41</td>
+<td width="43">
+					--</td>
+<td width="32">
+					Tau</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					04 27.0</td>
+<td width="51">
+					+16 00</td>
+<td width="29">
+					1.0</td>
+<td width="70">
+					330</td>
+<td width="85">
+					Hyades</td>
+</tr><tr><td width="24">
+					 42</td>
+<td width="43">
+					7006</td>
+<td width="32">
+					Del</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					21 01.5</td>
+<td width="51">
+					+16 11</td>
+<td width="29">
+					10.6</td>
+<td width="70">
+					2.8</td>
+<td width="85">
+					Very distant globular</td>
+</tr><tr><td width="24">
+					 43</td>
+<td width="43">
+					7814</td>
+<td width="32">
+					Peg</td>
+<td width="48">
+					SbG</td>
+<td width="54">
+					00 03.3</td>
+<td width="51">
+					+16 09</td>
+<td width="29">
+					10.5</td>
+<td width="70">
+					6 x 2</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 44</td>
+<td width="43">
+					7479</td>
+<td width="32">
+					Peg</td>
+<td width="48">
+					SBbG</td>
+<td width="54">
+					23 04.9</td>
+<td width="51">
+					+12 19</td>
+<td width="29">
+					11.0</td>
+<td width="70">
+					4 x 3</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 45</td>
+<td width="43">
+					5248</td>
+<td width="32">
+					Boo</td>
+<td width="48">
+					ScG</td>
+<td width="54">
+					13 37.5</td>
+<td width="51">
+					+08 53</td>
+<td width="29">
+					10.2</td>
+<td width="70">
+					6 x 4</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 46</td>
+<td width="43">
+					2261</td>
+<td width="32">
+					Mon</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					06 39.2</td>
+<td width="51">
+					+08 44</td>
+<td width="29">
+					10.0</td>
+<td width="70">
+					2 x 1</td>
+<td width="85">
+					Hubble's Variable Neb.</td>
+</tr><tr><td width="24">
+					 47</td>
+<td width="43">
+					6934</td>
+<td width="32">
+					Del</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					20 34.2</td>
+<td width="51">
+					+07 24</td>
+<td width="29">
+					8.9</td>
+<td width="70">
+					5.9</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 48</td>
+<td width="43">
+					2775</td>
+<td width="32">
+					Can</td>
+<td width="48">
+					SaG</td>
+<td width="54">
+					09 10.3</td>
+<td width="51">
+					+07 02</td>
+<td width="29">
+					10.3</td>
+<td width="70">
+					4.5 x 3</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 49</td>
+<td width="43">
+					2237<br />
+					-9</td>
+<td width="32">
+					Mon</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					06 32.3</td>
+<td width="51">
+					+05 03</td>
+<td width="29">
+					--</td>
+<td width="70">
+					80 x 60</td>
+<td width="85">
+					Rosette Nebula</td>
+</tr><tr><td width="24">
+					 50</td>
+<td width="43">
+					2244</td>
+<td width="32">
+					Mon</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					06 32.4</td>
+<td width="51">
+					+04 52</td>
+<td width="29">
+					4.8</td>
+<td width="70">
+					24</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 51</td>
+<td width="43">
+					IC<br />
+					1613</td>
+<td width="32">
+					Cet</td>
+<td width="48">
+					IG</td>
+<td width="54">
+					01 04.8</td>
+<td width="51">
+					+02 07</td>
+<td width="29">
+					9.0</td>
+<td width="70">
+					12 x 11</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 52</td>
+<td width="43">
+					4697</td>
+<td width="32">
+					Vir</td>
+<td width="48">
+					E4G</td>
+<td width="54">
+					12 48.6</td>
+<td width="51">
+					-05 48</td>
+<td width="29">
+					9.3</td>
+<td width="70">
+					6 x 3</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 53</td>
+<td width="43">
+					3115</td>
+<td width="32">
+					Sex</td>
+<td width="48">
+					E6G</td>
+<td width="54">
+					10 05.2</td>
+<td width="51">
+					-07 43</td>
+<td width="29">
+					9.1</td>
+<td width="70">
+					8 x 3</td>
+<td width="85">
+					Spindle Galaxy</td>
+</tr><tr><td width="24">
+					 54</td>
+<td width="43">
+					2506</td>
+<td width="32">
+					Mon</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					08 00.2</td>
+<td width="51">
+					-10 47</td>
+<td width="29">
+					7.6</td>
+<td width="70">
+					7</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 55</td>
+<td width="43">
+					7009</td>
+<td width="32">
+					Aqr</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					21 04.2</td>
+<td width="51">
+					-11 22</td>
+<td width="29">
+					8.3</td>
+<td width="70">
+					2.5/1</td>
+<td width="85">
+					Saturn Nebula</td>
+</tr><tr><td width="24">
+					 56</td>
+<td width="43">
+					246</td>
+<td width="32">
+					Cet</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					00 47.0</td>
+<td width="51">
+					-11 53</td>
+<td width="29">
+					8.0</td>
+<td width="70">
+					3.8</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 57</td>
+<td width="43">
+					6822</td>
+<td width="32">
+					Sgr</td>
+<td width="48">
+					IG</td>
+<td width="54">
+					19 44.9</td>
+<td width="51">
+					-14 48</td>
+<td width="29">
+					9.3</td>
+<td width="70">
+					10 x 9</td>
+<td width="85">
+					Barnard's Galaxy</td>
+</tr><tr><td width="24">
+					 58</td>
+<td width="43">
+					2360</td>
+<td width="32">
+					CMa</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					07 17.8</td>
+<td width="51">
+					-15 37</td>
+<td width="29">
+					7.2</td>
+<td width="70">
+					13</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 59</td>
+<td width="43">
+					3242</td>
+<td width="32">
+					Hya</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					10 24.8</td>
+<td width="51">
+					-18 38</td>
+<td width="29">
+					8.6</td>
+<td width="70">
+					0.3/21</td>
+<td width="85">
+					Ghost of Jupiter</td>
+</tr><tr><td width="24">
+					 60</td>
+<td width="43">
+					4038</td>
+<td width="32">
+					Crv</td>
+<td width="48">
+					ScG</td>
+<td width="54">
+					12 01.9</td>
+<td width="51">
+					-18 52</td>
+<td width="29">
+					11.3</td>
+<td width="70">
+					2.6 x 1.8</td>
+<td width="85">
+					The Antennae</td>
+</tr><tr><td width="24">
+					 61</td>
+<td width="43">
+					4039</td>
+<td width="32">
+					Crv</td>
+<td width="48">
+					ScG</td>
+<td width="54">
+					12 01.9</td>
+<td width="51">
+					-18 53</td>
+<td width="29">
+					13.0</td>
+<td width="70">
+					3.2 x 2.2</td>
+<td width="85">
+					The Antennae</td>
+</tr><tr><td width="24">
+					 62</td>
+<td width="43">
+					247</td>
+<td width="32">
+					Cet</td>
+<td width="48">
+					SG</td>
+<td width="54">
+					00 47.1</td>
+<td width="51">
+					-20 46</td>
+<td width="29">
+					8.9</td>
+<td width="70">
+					20 x 7</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 63</td>
+<td width="43">
+					7293</td>
+<td width="32">
+					Aqr</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					22 29.6</td>
+<td width="51">
+					-20 48</td>
+<td width="29">
+					6.5</td>
+<td width="70">
+					13</td>
+<td width="85">
+					Helix Nebula</td>
+</tr><tr><td width="24">
+					 64</td>
+<td width="43">
+					2362</td>
+<td width="32">
+					CMa</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					07 18.8</td>
+<td width="51">
+					-24 57</td>
+<td width="29">
+					4.1</td>
+<td width="70">
+					8</td>
+<td width="85">
+					Tau CMa Cluster</td>
+</tr><tr><td width="24">
+					 65</td>
+<td width="43">
+					253</td>
+<td width="32">
+					Scl</td>
+<td width="48">
+					SG</td>
+<td width="54">
+					00 47.6</td>
+<td width="51">
+					-25 17</td>
+<td width="29">
+					7.1</td>
+<td width="70">
+					25 x 7</td>
+<td width="85">
+					Sculptor Galaxy</td>
+</tr><tr><td width="24">
+					 66</td>
+<td width="43">
+					5694</td>
+<td width="32">
+					Hya</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					14 39.6</td>
+<td width="51">
+					-26 32</td>
+<td width="29">
+					10.2</td>
+<td width="70">
+					3.6</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 67</td>
+<td width="43">
+					1097</td>
+<td width="32">
+					For</td>
+<td width="48">
+					SBbG</td>
+<td width="54">
+					02 46.3</td>
+<td width="51">
+					-30 17</td>
+<td width="29">
+					9.2</td>
+<td width="70">
+					9 x 6</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 68</td>
+<td width="43">
+					6729</td>
+<td width="32">
+					CrA</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					19 01.9</td>
+<td width="51">
+					-36 57</td>
+<td width="29">
+					9.7</td>
+<td width="70">
+					1.0</td>
+<td width="85">
+					R CrA Nebula</td>
+</tr><tr><td width="24">
+					 69</td>
+<td width="43">
+					6302</td>
+<td width="32">
+					Sco</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					17 13.7</td>
+<td width="51">
+					-37 06</td>
+<td width="29">
+					12.8</td>
+<td width="70">
+					0.8</td>
+<td width="85">
+					Bug Nebula</td>
+</tr><tr><td width="24">
+					 70</td>
+<td width="43">
+					300</td>
+<td width="32">
+					Scl</td>
+<td width="48">
+					SdG</td>
+<td width="54">
+					00 54.9</td>
+<td width="51">
+					-37 41</td>
+<td width="29">
+					8.1</td>
+<td width="70">
+					20 x 13</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 71</td>
+<td width="43">
+					2477</td>
+<td width="32">
+					Pup</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					07 52.3</td>
+<td width="51">
+					-38 33</td>
+<td width="29">
+					5.8</td>
+<td width="70">
+					27</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 72</td>
+<td width="43">
+					55</td>
+<td width="32">
+					Scl</td>
+<td width="48">
+					SBG</td>
+<td width="54">
+					00 14.9</td>
+<td width="51">
+					-39 11</td>
+<td width="29">
+					8.2</td>
+<td width="70">
+					32 x 6</td>
+<td width="85">
+					Brightest in Scl Cluster</td>
+</tr><tr><td width="24">
+					 73</td>
+<td width="43">
+					1851</td>
+<td width="32">
+					Col</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					05 14.1</td>
+<td width="51">
+					-40 03</td>
+<td width="29">
+					7.3</td>
+<td width="70">
+					11</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 74</td>
+<td width="43">
+					3132</td>
+<td width="32">
+					Vel</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					10 07.7</td>
+<td width="51">
+					-40 26</td>
+<td width="29">
+					8.2</td>
+<td width="70">
+					0.8</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 75</td>
+<td width="43">
+					6124</td>
+<td width="32">
+					Sco</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					16 25.6</td>
+<td width="51">
+					-40 40</td>
+<td width="29">
+					5.8</td>
+<td width="70">
+					29</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 76</td>
+<td width="43">
+					6231</td>
+<td width="32">
+					Sco</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					16 54.0</td>
+<td width="51">
+					-41 48</td>
+<td width="29">
+					2.6</td>
+<td width="70">
+					15</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 77</td>
+<td width="43">
+					5128</td>
+<td width="32">
+					Cen</td>
+<td width="48">
+					Peculiar<br />
+					Galaxy</td>
+<td width="54">
+					13 25.5</td>
+<td width="51">
+					-43 01</td>
+<td width="29">
+					7.0</td>
+<td width="70">
+					18 x 14</td>
+<td width="85">
+					Cen A radio source</td>
+</tr><tr><td width="24">
+					 78</td>
+<td width="43">
+					6541</td>
+<td width="32">
+					CrA</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					18 08.0</td>
+<td width="51">
+					-43 42</td>
+<td width="29">
+					6.6</td>
+<td width="70">
+					13</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 79</td>
+<td width="43">
+					3201</td>
+<td width="32">
+					Vel</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					10 17.6</td>
+<td width="51">
+					-46 25</td>
+<td width="29">
+					6.7</td>
+<td width="70">
+					18</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 80</td>
+<td width="43">
+					5139</td>
+<td width="32">
+					Cen</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					13 26.8</td>
+<td width="51">
+					-47 29</td>
+<td width="29">
+					3.6</td>
+<td width="70">
+					36</td>
+<td width="85">
+					Omega Centauri</td>
+</tr><tr><td width="24">
+					 81</td>
+<td width="43">
+					6352</td>
+<td width="32">
+					Ara</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					17 25.5</td>
+<td width="51">
+					-48 25</td>
+<td width="29">
+					8.1</td>
+<td width="70">
+					7</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 82</td>
+<td width="43">
+					6193</td>
+<td width="32">
+					Ara</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					16 41.3</td>
+<td width="51">
+					-48 46</td>
+<td width="29">
+					5.2</td>
+<td width="70">
+					15</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 83</td>
+<td width="43">
+					4945</td>
+<td width="32">
+					Cen</td>
+<td width="48">
+					SBcG</td>
+<td width="54">
+					13 05.4</td>
+<td width="51">
+					-49 28</td>
+<td width="29">
+					9.5</td>
+<td width="70">
+					20 x 4</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 84</td>
+<td width="43">
+					5286</td>
+<td width="32">
+					Cen</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					13 46.4</td>
+<td width="51">
+					-51 22</td>
+<td width="29">
+					7.6</td>
+<td width="70">
+					9</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 85</td>
+<td width="43">
+					IC<br />
+					2391</td>
+<td width="32">
+					Vel</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					08 40.2</td>
+<td width="51">
+					-53 04</td>
+<td width="29">
+					2.5</td>
+<td width="70">
+					50</td>
+<td width="85">
+					o (Omicron) Vel Cluster</td>
+</tr><tr><td width="24">
+					 86</td>
+<td width="43">
+					6397</td>
+<td width="32">
+					Ara</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					17 40.7</td>
+<td width="51">
+					-53 40</td>
+<td width="29">
+					5.6</td>
+<td width="70">
+					26</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 87</td>
+<td width="43">
+					1261</td>
+<td width="32">
+					Hor</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					03 12.3</td>
+<td width="51">
+					-55 13</td>
+<td width="29">
+					8.4</td>
+<td width="70">
+					7</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 88</td>
+<td width="43">
+					5823</td>
+<td width="32">
+					Cir</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					15 05.7</td>
+<td width="51">
+					-55 36</td>
+<td width="29">
+					7.9</td>
+<td width="70">
+					10</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 89</td>
+<td width="43">
+					6087</td>
+<td width="32">
+					Nor</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					16 18.9</td>
+<td width="51">
+					-57 54</td>
+<td width="29">
+					5.4</td>
+<td width="70">
+					12</td>
+<td width="85">
+					S Nor Cluster</td>
+</tr><tr><td width="24">
+					 90</td>
+<td width="43">
+					2867</td>
+<td width="32">
+					Car</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					09 21.4</td>
+<td width="51">
+					-58 19</td>
+<td width="29">
+					9.7</td>
+<td width="70">
+					0.2</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 91</td>
+<td width="43">
+					3532</td>
+<td width="32">
+					Car</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					11 06.4</td>
+<td width="51">
+					-58 40</td>
+<td width="29">
+					3.0</td>
+<td width="70">
+					55</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 92</td>
+<td width="43">
+					3372</td>
+<td width="32">
+					Car</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					10 43.8</td>
+<td width="51">
+					-59 52</td>
+<td width="29">
+					6.2</td>
+<td width="70">
+					120 x 120</td>
+<td width="85">
+					Eta Carinae Nebula</td>
+</tr><tr><td width="24">
+					 93</td>
+<td width="43">
+					6752</td>
+<td width="32">
+					Pav</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					19 10.9</td>
+<td width="51">
+					-59 59</td>
+<td width="29">
+					5.4</td>
+<td width="70">
+					20</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 94</td>
+<td width="43">
+					4755</td>
+<td width="32">
+					Cru</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					12 53.6</td>
+<td width="51">
+					-60 20</td>
+<td width="29">
+					4.2</td>
+<td width="70">
+					10</td>
+<td width="85">
+					Jewel Box Cluster</td>
+</tr><tr><td width="24">
+					 95</td>
+<td width="43">
+					6025</td>
+<td width="32">
+					TrA</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					16 03.7</td>
+<td width="51">
+					-60 30</td>
+<td width="29">
+					5.1</td>
+<td width="70">
+					12</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 96</td>
+<td width="43">
+					2516</td>
+<td width="32">
+					Car</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					07 58.3</td>
+<td width="51">
+					-60 52</td>
+<td width="29">
+					3.8</td>
+<td width="70">
+					30</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 97</td>
+<td width="43">
+					3766</td>
+<td width="32">
+					Cen</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					11 36.1</td>
+<td width="51">
+					-61 37</td>
+<td width="29">
+					5.3</td>
+<td width="70">
+					12</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 98</td>
+<td width="43">
+					4609</td>
+<td width="32">
+					Cru</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					12 42.3</td>
+<td width="51">
+					-62 58</td>
+<td width="29">
+					6.9</td>
+<td width="70">
+					5</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					 99</td>
+<td width="43">
+					--</td>
+<td width="32">
+					Cru</td>
+<td width="48">
+					DN</td>
+<td width="54">
+					12 53.0</td>
+<td width="51">
+					-63 00</td>
+<td width="29">
+					--</td>
+<td width="70">
+					400 x 300</td>
+<td width="85">
+					Coal Sack</td>
+</tr><tr><td width="24">
+					100</td>
+<td width="43">
+					IC<br />
+					2944</td>
+<td width="32">
+					Cen</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					11 36.6</td>
+<td width="51">
+					-63 02</td>
+<td width="29">
+					4.5</td>
+<td width="70">
+					15</td>
+<td width="85">
+					- (Lambda) Cen Cluster</td>
+</tr><tr><td width="24">
+					101</td>
+<td width="43">
+					6744</td>
+<td width="32">
+					Pav</td>
+<td width="48">
+					SBbG</td>
+<td width="54">
+					19 09.8</td>
+<td width="51">
+					-63 51</td>
+<td width="29">
+					9.0</td>
+<td width="70">
+					16 x 10</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					102</td>
+<td width="43">
+					IC<br />
+					2602</td>
+<td width="32">
+					Car</td>
+<td width="48">
+					OC</td>
+<td width="54">
+					10 43.2</td>
+<td width="51">
+					-64 24</td>
+<td width="29">
+					1.9</td>
+<td width="70">
+					50</td>
+<td width="85">
+					÷ (Theta) Car Cluster</td>
+</tr><tr><td width="24">
+					103</td>
+<td width="43">
+					2070</td>
+<td width="32">
+					Dor</td>
+<td width="48">
+					BN</td>
+<td width="54">
+					05 38.7</td>
+<td width="51">
+					-69 06</td>
+<td width="29">
+					1.0</td>
+<td width="70">
+					40 x 25</td>
+<td width="85">
+					Tarantula Neb. in LMC</td>
+</tr><tr><td width="24">
+					104</td>
+<td width="43">
+					362</td>
+<td width="32">
+					Tuc</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					01 03.2</td>
+<td width="51">
+					-70 51</td>
+<td width="29">
+					6.6</td>
+<td width="70">
+					13</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					105</td>
+<td width="43">
+					4833</td>
+<td width="32">
+					Mus</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					12 59.6</td>
+<td width="51">
+					-70 53</td>
+<td width="29">
+					7.3</td>
+<td width="70">
+					14</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					106</td>
+<td width="43">
+					104</td>
+<td width="32">
+					Tuc</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					00 24.1</td>
+<td width="51">
+					-72 05</td>
+<td width="29">
+					4.0</td>
+<td width="70">
+					31</td>
+<td width="85">
+					47 Tucanae</td>
+</tr><tr><td width="24">
+					107</td>
+<td width="43">
+					6101</td>
+<td width="32">
+					Aps</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					16 25.8</td>
+<td width="51">
+					-72 12</td>
+<td width="29">
+					9.3</td>
+<td width="70">
+					11</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					108</td>
+<td width="43">
+					4372</td>
+<td width="32">
+					Mus</td>
+<td width="48">
+					GC</td>
+<td width="54">
+					12 25.8</td>
+<td width="51">
+					-72 40</td>
+<td width="29">
+					7.8</td>
+<td width="70">
+					19</td>
+<td width="85">
+					 </td>
+</tr><tr><td width="24">
+					109</td>
+<td width="43">
+					3195</td>
+<td width="32">
+					Cha</td>
+<td width="48">
+					PN</td>
+<td width="54">
+					10 09.5</td>
+<td width="51">
+					-80 52</td>
+<td width="29">
+					--</td>
+<td width="70">
+					0.6</td>
+<td width="85">
+					 </td>
+</tr></tbody></table>
