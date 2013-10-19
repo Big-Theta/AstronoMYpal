@@ -27,7 +27,7 @@ def create_db_tables():
     curs.execute("""
             CREATE TABLE docket(
                 id          INTEGER PRIMARY KEY AUTOINCREMENT,
-                name        VARCHAR(100),
+                name        TEXT,
                 observations    INTEGER
             )
     """)
@@ -45,9 +45,9 @@ def create_db_tables():
     curs.execute("""
             CREATE TABLE telescope(
                 id          INTEGER PRIMARY KEY AUTOINCREMENT,
-                name        VARCHAR(100),
-                type        VARCHAR(100),
-                manufacturer    VARCHAR(100),
+                name        TEXT,
+                type        TEXT,
+                manufacturer    TEXT,
                 aperture_in REAL
             )
     """)
@@ -69,8 +69,8 @@ def create_db_tables():
                 session_id  INTEGER,
                 stellar_object_id   INTEGER,
                 time        DATETIME,
-                conditions  VARCHAR(1000),
-                description VARCHAR(1000),
+                conditions  TEXT,
+                description TEXT,
                 FOREIGN KEY(session_id) REFERENCES session(id),
                 FOREIGN KEY(stellar_object_id) REFERENCES stellar_object(id)
             )
