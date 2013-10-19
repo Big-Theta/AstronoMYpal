@@ -34,7 +34,8 @@ def create_db_tables():
                 constellation   TEXT,
                 magnitude   REAL,
                 right_ascension TEXT,
-                declination TEXT
+                declination TEXT,
+                img_name    TEXT
             )
     """)
 
