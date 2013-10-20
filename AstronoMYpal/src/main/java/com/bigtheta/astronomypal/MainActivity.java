@@ -42,13 +42,13 @@ public class MainActivity extends FragmentActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.e("abc", "def");
         mDatabaseHelper = new DatabaseHelper(this);
         try {
             mDatabaseHelper.createDatabase();
         } catch (IOException ioe) {
             throw new Error("Unable to create database");
         }
+        mDatabase = mDatabaseHelper.getDatabase();
 
         setContentView(R.layout.activity_item_list);
 
@@ -96,6 +96,8 @@ public class MainActivity extends FragmentActivity
         }
     }
     public void LoganHackTime(View view) {
-        ((TextView) findViewById(R.id.LoganHackTextView)).setText("And God killed another puppy.");
+        StellarObject test = new StellarObject(mDatabase, 1);
+        ((TextView) findViewById(R.id.LoganHackTextView)).setText(
+                test.mName);
     }
 }

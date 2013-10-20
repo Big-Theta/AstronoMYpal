@@ -26,39 +26,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private SQLiteDatabase mDatabase = null;
     private final Context mContext;
 
-    private static final String[] tableUserColumns = {
+    public static final String[] tableUserColumns = {
             "_id",
             "name"
     };
 
-    private static final String[] tableStellarObjectColumns = {
-            "_id",
-            "ngc_id",
-            "name",
-            "description",
-            "type",
-            "distance",
-            "size",
-            "constellation",
-            "magnitude",
-            "right_ascension",
-            "declination",
-            "img_name"
-    };
-
-    private static final String[] tableDocketColumns = {
+    public static final String[] tableDocketColumns = {
             "_id",
             "name",
             "observations"
     };
 
-    private static final String[] tableDocketItemColumns = {
+    public static final String[] tableDocketItemColumns = {
             "_id",
             "docket_id",
             "stellar_object_id"
     };
 
-    private static final String[] tableTelescopeColumns = {
+    public static final String[] tableTelescopeColumns = {
             "_id",
             "name",
             "type",
@@ -66,10 +51,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             "aperture_in"
     };
 
-    private static final String[] tableSessionColumns = {
+    public static final String[] tableSessionColumns = {
     };
 
-    private static final String[] tableSessionItemColumns = {
+    public static final String[] tableSessionItemColumns = {
             "_id",
             "session_id",
             "stellar_object_id",
@@ -87,29 +72,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public void createDatabase() throws IOException {
-        Log.e("checking", "above");
         boolean dbExist = checkDatabase();
-        Log.e("checking", "below");
-        if (!dbExist) {
-            Log.e("readableDatabase", "getting");
-            this.getReadableDatabase();
-            Log.e("readableDatabase", "got");
+        SQLiteDatabase dbRead = null;
+        if (dbExist) {
+        } else {
+            dbRead = this.getReadableDatabase();
+            dbRead.close();
             try {
-                Log.e("copying", "above");
+                this.close();
                 copyDatabase();
-                Log.e("copying", "below");
             } catch (IOException e) {
                 throw new Error("Error copying database");
             }
         }
+        openDatabase();
+        close();
+        openDatabase();
     }
 
     private boolean checkDatabase(){
         SQLiteDatabase checkDB = null;
-        try{
+        try {
             String myPath = DB_PATH + DB_NAME;
             checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
-        }catch(SQLiteException e){
+        } catch (SQLiteException e){
         }
 
         if(checkDB != null){
@@ -119,28 +105,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     private void copyDatabase() throws IOException {
-        Log.e("copyDatabase", "entering");
-        Log.e("DB_NAME", DB_NAME);
         InputStream myInput = mContext.getAssets().open(DB_NAME);
         String outFileName = DB_PATH + DB_NAME;
-        Log.e("DB_NAME", DB_NAME);
-        Log.e("db name", outFileName);
-        Log.e("tracker", "1");
         OutputStream myOutput = new FileOutputStream(outFileName);
-        Log.e("tracker", "2");
         byte[] buffer = new byte[1024];
-        Log.e("tracker", "3");
         int length;
-        Log.e("tracker", "4");
         while ((length = myInput.read(buffer)) > 0) {
-            Log.e("tracker", "5");
             myOutput.write(buffer, 0, length);
-            Log.e("tracker", "6");
         }
-        Log.e("tracker", "7");
         myOutput.flush();
         myOutput.close();
         myInput.close();
+        this.close();
     }
 
     public void openDatabase() throws SQLiteException{
@@ -150,12 +126,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public synchronized void close() {
-
-        if(mDatabase != null)
+        if(mDatabase != null) {
             mDatabase.close();
+        }
 
         super.close();
-
     }
 
     @Override
@@ -171,25 +146,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public SQLiteDatabase getDatabase() {
-        if (mDatabase == null) {
-            openDatabase();
-        }
         return mDatabase;
     }
 
-    public String fooQuery() {
+    public int getUserId(String user) {
         Cursor cursor = getDatabase().query(
-                "user", tableUserColumns, "name = ?",
-                new String[] {"John Smith"}, null, null, null);
+                "user", tableUserColumns, "user = ?",
+                new String[] {user}, null, null, null);
         cursor.moveToFirst();
-        String retval = cursor.getString(cursor.getColumnIndexOrThrow("name"));
+        int retval = cursor.getInt(cursor.getColumnIndexOrThrow("_id"));
         cursor.close();
         return retval;
     }
-
-
-// Add your public helper methods to access and get content from the database.
-// You could return cursors by doing "return mDatabase.query(....)" so it'd be easy
-// to you to create adapters for your views.
-
 }
