@@ -1,20 +1,14 @@
 package com.bigtheta.astronomypal;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.ListView;
 
-import com.bigtheta.astronomypal.MainMenu.MainMenuFragment;
-
-import com.bigtheta.astronomypal.MainMenu.MainMenuItemDetailFragment;
-
-import java.util.ArrayList;
+import java.io.IOException;
+import android.util.Log;
 
 
 /**
@@ -27,7 +21,7 @@ import java.util.ArrayList;
  * <p>
  * The activity makes heavy use of fragments. The list of items is a
  * {@link ItemListFragment} and the item details
- * (if present) is a {@link com.bigtheta.astronomypal.MainMenu.MainMenuItemDetailFragment}.
+ * (if present) is a {@link ItemDetailFragment}.
  * <p>
  * This activity also implements the required
  * {@link ItemListFragment.Callbacks} interface
@@ -41,11 +35,22 @@ public class MainActivity extends FragmentActivity
      * device.
      */
     private boolean mTwoPane;
+    private DatabaseHelper mDatabaseHelper;
+    private SQLiteDatabase mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item_twopane);
+
+        mDatabaseHelper = new DatabaseHelper(this);
+        try {
+            mDatabaseHelper.createDatabase();
+        } catch (IOException ioe) {
+            throw new Error("Unable to create database");
+        }
+        mDatabase = mDatabaseHelper.getDatabase();
+
+        setContentView(R.layout.activity_item_list);
 
         if (findViewById(R.id.item_detail_container) != null) {
             // The detail container view will be present only in the
@@ -56,22 +61,10 @@ public class MainActivity extends FragmentActivity
 
             // In two-pane mode, list items should be given the
             // 'activated' state when touched.
-            //((ItemListFragment) getSupportFragmentManager()
-            //        .findFragmentById(R.id.main_menu_item_list))
-            //        .setActivateOnItemClick(true);
-            //Fragment mainMenuFragment = getSupportFragmentManager()
-            //        .findFragmentById(R.id.main_menu_item_list);
-            //MainMenuFragment mainMenu = new MainMenuFragment();
+            ((ItemListFragment) getSupportFragmentManager()
+                    .findFragmentById(R.id.item_list))
+                    .setActivateOnItemClick(true);
         }
-        ArrayList<String> listItems = new ArrayList<String>();
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listItems);
-        ListView lv = (ListView) findViewById(R.id.messier_list);
-        lv.setAdapter(adapter);
-        //lv.setFilterEnabled(true);
-        //put items in the listItems
-        adapter.notifyDataSetChanged();
-
 
         // TODO: If exposing deep links into your app, handle intents here.
     }
@@ -87,8 +80,8 @@ public class MainActivity extends FragmentActivity
             // adding or replacing the detail fragment using a
             // fragment transaction.
             Bundle arguments = new Bundle();
-            arguments.putString(MainMenuItemDetailFragment.ARG_ITEM_ID, id);
-            MainMenuItemDetailFragment fragment = new MainMenuItemDetailFragment();
+            arguments.putString(ItemDetailFragment.ARG_ITEM_ID, id);
+            ItemDetailFragment fragment = new ItemDetailFragment();
             fragment.setArguments(arguments);
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.item_detail_container, fragment)
@@ -98,15 +91,17 @@ public class MainActivity extends FragmentActivity
             // In single-pane mode, simply start the detail activity
             // for the selected item ID.
             Intent detailIntent = new Intent(this, ItemDetailActivity.class);
-            detailIntent.putExtra(MainMenuItemDetailFragment.ARG_ITEM_ID, id);
+            detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, id);
             startActivity(detailIntent);
         }
     }
-    public void search(View view) {
-        String query = ((EditText) findViewById(R.id.search_box)).getText().toString();
-        ((TextView) findViewById(R.id.LoganHackTextView)).setText(query);
-    }
     public void LoganHackTime(View view) {
-        ((TextView) findViewById(R.id.LoganHackTextView)).setText("And God killed another puppy.");
+        StellarObject test = new StellarObject(mDatabase, 4);
+        ((TextView) findViewById(R.id.LoganHackTextView)).setText(
+                test.mDescription);
+
+        for (StellarObject object : StellarObject.getAll(mDatabase)) {
+            Log.e("FOOBARBAZ", object.mDescription);
+        }
     }
 }

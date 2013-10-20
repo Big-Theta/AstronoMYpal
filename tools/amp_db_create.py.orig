@@ -1,5 +1,6 @@
 import sqlite3
 import datetime
+import os
 
 import caldwell_parser
 
@@ -106,10 +107,10 @@ def populate_mock_entries():
         ("INSERT INTO user VALUES(?, ?)", (None, "John Smith",)),
         ("""
             INSERT INTO stellar_object
-                VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
          """,
          (None, "200000", "foobar", "foobar", "mock",
-          9000.1, "10x20", None, None, None, None)),
+          9000.1, "10x20", None, None, None, None, None)),
         ("INSERT INTO docket VALUES(?, ?, ?)", (None, "mock", 1)),
         ("INSERT INTO docket_item VALUES (?, ?, ?)", (None, 1, 1)),
         ("INSERT INTO telescope VALUES (?, ?, ?, ?, ?)",
@@ -161,5 +162,12 @@ def populate_caldwell_data(rows):
 
 if __name__ == '__main__':
     create_db_tables()
+<<<<<<< HEAD
+    populate_mock_entries()
+    conn.close()
+    os.system("rm ../AstronoMYpal/assets/amp.db")
+    os.system("mv amp.db ../AstronoMYpal/assets")
+=======
     populate_caldwell_data(caldwell_parser.rows[1:])
+>>>>>>> origin/andrew
 
