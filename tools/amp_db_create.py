@@ -3,7 +3,7 @@ import datetime
 
 import caldwell_parser
 
-conn = sqlite3.connect('amp.db')
+conn = sqlite3.connect('amp_db')
 
 def create_db_tables():
     curs = conn.cursor()
