@@ -1,6 +1,7 @@
 import sqlite3
 import datetime
-import os
+
+import caldwell_parser
 
 conn = sqlite3.connect('amp.db')
 
@@ -105,10 +106,10 @@ def populate_mock_entries():
         ("INSERT INTO user VALUES(?, ?)", (None, "John Smith",)),
         ("""
             INSERT INTO stellar_object
-                VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
          """,
          (None, "200000", "foobar", "foobar", "mock",
-          9000.1, "10x20", None, None, None, None, None)),
+          9000.1, "10x20", None, None, None, None)),
         ("INSERT INTO docket VALUES(?, ?, ?)", (None, "mock", 1)),
         ("INSERT INTO docket_item VALUES (?, ?, ?)", (None, 1, 1)),
         ("INSERT INTO telescope VALUES (?, ?, ?, ?, ?)",
@@ -123,10 +124,42 @@ def populate_mock_entries():
 
     conn.commit()
 
+def populate_caldwell_data(rows):
+    curs = conn.cursor()
+
+    # Insert stellar objects
+    stellar_object = ("INSERT INTO stellar_object VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")
+    for (row) in rows:
+        curs.execute(stellar_object, row)
+
+    # Create Caldwell docket
+    caldwell_docket = ("INSERT INTO docket VALUES(?, ?, ?)")
+    values = [(None, "Caldwell Partial Docket", 70),
+              (None, "Caldwell Complete Docket", 109)]
+    for value in values:
+        curs.execute(caldwell_docket, value)
+
+    # Get Caldwell docket ids
+    docket_ids = []
+    for i in range(2):
+        curs.execute("SELECT _id FROM docket WHERE name='{}'".format(values[i][1]))
+        docket_ids.append(curs.fetchall()[0][0])
+
+    # Create docket items
+    caldwell_item = ("INSERT INTO docket_item VALUES (?, ?, ?)")
+    
+    item_ids = []
+    for item in rows:
+        curs.execute("SELECT _id FROM stellar_object WHERE ngc_ic='{}'".format(item[1]))
+        item_ids.append(curs.fetchall()[0][0])
+
+    for docket_id in docket_ids:
+        for item_id in item_ids:
+            curs.execute(caldwell_item, (None, int(docket_id), int(item_id)))
+    conn.commit()
+
+
 if __name__ == '__main__':
     create_db_tables()
-    populate_mock_entries()
-    conn.close()
-    os.system("rm ../AstronoMYpal/assets/amp.db")
-    os.system("mv amp.db ../AstronoMYpal/assets")
+    populate_caldwell_data(caldwell_parser.rows[1:])
 
