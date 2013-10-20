@@ -13,9 +13,11 @@ images = {}
 # print(rows[1].findAll('td')[3].find('a').find('img').get('src'))
 for row in rows:
     cells = row.findAll('td')
-    image_name = cells[3].find('a').find('img')
+    image_name = cells[3].find('a')
     if image_name:
-        dest_name = "caldwell_{}.jpg".format(image_count)
+        image_name = image_name.find('img')
+    if image_name:
+        dest_name = "caldwell_{0:0>3}.jpg".format(image_count)
         images[dest_name] = "http:"+image_name.get('src')
         image_count += 1
 
