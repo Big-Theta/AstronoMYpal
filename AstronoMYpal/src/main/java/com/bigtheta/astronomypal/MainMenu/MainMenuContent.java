@@ -1,4 +1,4 @@
-package com.bigtheta.astronomypal.MenuContent;
+package com.bigtheta.astronomypal.MainMenu;
 
 import android.app.Fragment;
 

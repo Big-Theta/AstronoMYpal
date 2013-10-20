@@ -7,8 +7,8 @@
     android:baselineAligned="false"
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
-    android:showDividers="middle"
-    tools:context=".ItemListActivity">
+    android:showDividers="middle">
+    <!--tools:context=".ItemListActivity">-->
 
     <!--
     This layout is a two-pane layout for the Items
@@ -21,14 +21,41 @@
     http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
     -->
 
-    <fragment
-        android:id="@+id/item_list"
-        android:name="com.bigtheta.astronomypal.ItemListFragment"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        tools:layout="@android:layout/list_content" />
+        android:id="@id/main_menu_fragment_container">
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start a New Session"
+            android:id="@+id/new_session_button" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Past Session"
+            android:id="@+id/past_session_button"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Settings"
+            android:id="@+id/personal_settings_button"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Achievements for real"
+            android:id="@+id/achievements_button"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
     <FrameLayout
         android:id="@+id/item_detail_container"
         android:layout_width="0dp"

@@ -1,4 +1,6 @@
-package com.bigtheta.astronomypal.MenuContent;
+package com.bigtheta.astronomypal.PersonalSettingsMenu;
+
+import android.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +10,7 @@ import java.util.Map;
 /**
  * Created by cevans on 10/19/13.
  */
-public class PersonalSettingsContent {
+public class PersonalSettingsMenuContent {
 
     /**
      * An array of sample (dummy) items.
@@ -22,8 +24,8 @@ public class PersonalSettingsContent {
 
     static {
         // Add 4 sample items.
-        addItem(new PersonalSettingsMenuItem("1", "Telescope"));
-        addItem(new PersonalSettingsMenuItem("2", "Location"));
+        addItem(new PersonalSettingsMenuItem("1", "Location", null));
+        addItem(new PersonalSettingsMenuItem("2", "Telescope", null));
     }
 
     private static void addItem(PersonalSettingsMenuItem item) {
@@ -37,10 +39,12 @@ public class PersonalSettingsContent {
     public static class PersonalSettingsMenuItem {
         public String id;
         public String content;
+        public Fragment subMenu;
 
-        public PersonalSettingsMenuItem(String id, String content) {
+        public PersonalSettingsMenuItem(String id, String content, Fragment subMenu) {
             this.id = id;
             this.content = content;
+            this.subMenu = subMenu;
         }
 
         @Override

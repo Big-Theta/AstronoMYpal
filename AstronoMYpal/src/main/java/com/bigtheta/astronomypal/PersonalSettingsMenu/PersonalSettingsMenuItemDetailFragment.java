@@ -1,21 +1,20 @@
-package com.bigtheta.astronomypal;
+package com.bigtheta.astronomypal.PersonalSettingsMenu;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.bigtheta.astronomypal.MenuContent.MainMenuContent;
+import com.bigtheta.astronomypal.R;
 
 /**
  * A fragment representing a single Item detail screen.
- * This fragment is either contained in a {@link MainActivity}
- * in two-pane mode (on tablets) or a {@link ItemDetailActivity}
+ * This fragment is either contained in a {@link com.bigtheta.astronomypal.MainActivity}
+ * in two-pane mode (on tablets) or a {@link com.bigtheta.astronomypal.ItemDetailActivity}
  * on handsets.
  */
-public class ItemDetailFragment extends Fragment {
+public class PersonalSettingsMenuItemDetailFragment extends Fragment {
     /**
      * The fragment argument representing the item ID that this fragment
      * represents.
@@ -25,13 +24,13 @@ public class ItemDetailFragment extends Fragment {
     /**
      * The dummy content this fragment is presenting.
      */
-    private MainMenuContent.MainMenuItem mItem;
+    private PersonalSettingsMenuContent.PersonalSettingsMenuItem mItem;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public ItemDetailFragment() {
+    public PersonalSettingsMenuItemDetailFragment() {
     }
 
     @Override
@@ -42,7 +41,7 @@ public class ItemDetailFragment extends Fragment {
             // Load the dummy content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
-            mItem = MainMenuContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
+            mItem = PersonalSettingsMenuContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
         }
     }
 
