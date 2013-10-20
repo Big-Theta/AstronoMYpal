@@ -41,4 +41,4 @@ def type_lookup(type_):
 
 rows = [[None, i['ngc_id'], '', i['description'], type_lookup(i['type']), '',
        i['size'], i['constellation'], i['magnitude'],
-       i['right_ascension'], i['declination'], ''] for i in data_list]
+         i['right_ascension'], i['declination'], 'caldwell_{}.jpg'.format(j)] for j, i in enumerate(data_list)]
