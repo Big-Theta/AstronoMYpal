@@ -101,7 +101,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if(checkDB != null){
             checkDB.close();
         }
-        return checkDB != null ? true : false;
+        return false;
+        //return checkDB != null ? true : false;
     }
 
     private void copyDatabase() throws IOException {
@@ -151,11 +152,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public int getUserId(String user) {
         Cursor cursor = getDatabase().query(
-                "user", tableUserColumns, "user = ?",
+                "user", tableUserColumns, "name = ?",
                 new String[] {user}, null, null, null);
         cursor.moveToFirst();
         int retval = cursor.getInt(cursor.getColumnIndexOrThrow("_id"));
         cursor.close();
+
         return retval;
     }
 }

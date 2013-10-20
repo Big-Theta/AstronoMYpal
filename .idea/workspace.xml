@@ -15,8 +15,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75301f82-d035-4323-abf1-09b14ed90b05" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AstronoMYpal/src/main/assets/amp_db" afterPath="$PROJECT_DIR$/AstronoMYpal/src/main/assets/amp_db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DatabaseHelper.java" afterPath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DatabaseHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MainActivity.java" afterPath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/StellarObject.java" afterPath="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/StellarObject.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AstronoMYpal.iws" />
@@ -81,21 +83,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="27" selection-start="3796" selection-end="3796" vertical-scroll-proportion="0.0" vertical-offset="1206" max-vertical-offset="1818">
+            <state line="104" column="8" selection-start="3938" selection-end="3938" vertical-scroll-proportion="0.6659794" vertical-offset="1405" max-vertical-offset="1890">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StellarObject.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StellarObject.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/StellarObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="69" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.8214286" vertical-offset="414" max-vertical-offset="1170">
+            <state line="64" column="0" selection-start="2442" selection-end="2442" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1422">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2346#2361#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,7 +107,7 @@
       <file leaf-file-name="DatabaseHelper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="0" selection-start="4153" selection-end="4153" vertical-scroll-proportion="0.0" vertical-offset="2286" max-vertical-offset="2790">
+            <state line="156" column="28" selection-start="4205" selection-end="4205" vertical-scroll-proportion="0.0" vertical-offset="2358" max-vertical-offset="2826">
               <folding />
             </state>
           </provider>
@@ -474,9 +477,9 @@
         <option value="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/ItemListActivity.java" />
         <option value="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DataBaseHelper.java" />
         <option value="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MenuContent/StellarObject.java" />
+        <option value="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/StellarObject.java" />
         <option value="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MainActivity.java" />
-        <option value="$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/StellarObject.java" />
       </list>
     </option>
   </component>
@@ -901,7 +904,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32860824" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31185567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33634022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -970,6 +973,7 @@
         <state line="13" column="18" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="1080">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2346#2361#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1054,26 +1058,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/StellarObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="2442" selection-end="2442" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1422">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2346#2361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/DatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="0" selection-start="4153" selection-end="4153" vertical-scroll-proportion="0.0" vertical-offset="2322" max-vertical-offset="2790">
+        <state line="156" column="28" selection-start="4205" selection-end="4205" vertical-scroll-proportion="0.0" vertical-offset="2358" max-vertical-offset="2826">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="27" selection-start="3796" selection-end="3796" vertical-scroll-proportion="0.0" vertical-offset="1206" max-vertical-offset="1818">
+        <state line="104" column="8" selection-start="3938" selection-end="3938" vertical-scroll-proportion="0.6659794" vertical-offset="1405" max-vertical-offset="1890">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AstronoMYpal/src/main/java/com/bigtheta/astronomypal/StellarObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="69" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.8214286" vertical-offset="414" max-vertical-offset="1170">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

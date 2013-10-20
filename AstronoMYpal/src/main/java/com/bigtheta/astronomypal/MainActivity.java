@@ -96,8 +96,12 @@ public class MainActivity extends FragmentActivity
         }
     }
     public void LoganHackTime(View view) {
-        StellarObject test = new StellarObject(mDatabase, 1);
+        StellarObject test = new StellarObject(mDatabase, 4);
         ((TextView) findViewById(R.id.LoganHackTextView)).setText(
-                test.mName);
+                test.mDescription);
+
+        for (StellarObject object : StellarObject.getAll(mDatabase)) {
+            Log.e("FOOBARBAZ", object.mDescription);
+        }
     }
 }

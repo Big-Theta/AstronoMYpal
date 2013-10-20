@@ -1,6 +1,8 @@
 package com.bigtheta.astronomypal;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import java.util.ArrayList;
+import android.util.Log;
 
 /**
  * Created by logan on 10/19/13.
@@ -55,5 +57,17 @@ public class StellarObject {
         mDeclination = cursor.getString(cursor.getColumnIndexOrThrow("declination"));
         mImageName = cursor.getString(cursor.getColumnIndexOrThrow("img_name"));
         cursor.close();
+    }
+
+    public static ArrayList<StellarObject> getAll(SQLiteDatabase db) {
+        ArrayList<StellarObject> objects = new ArrayList<StellarObject>();
+        Cursor cursor = db.rawQuery("select _id from stellar_object", null);
+        cursor.moveToFirst();
+        for (int i = 0; i < cursor.getCount(); i++) {
+            objects.add(new StellarObject(db, Integer.parseInt(cursor.getString(0))));
+            cursor.moveToNext();
+        }
+        cursor.close();
+        return objects;
     }
 }
