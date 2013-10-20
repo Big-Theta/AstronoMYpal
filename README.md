@@ -1,8 +1,9 @@
 AstronoMYpal
 ============
 
-Team: BigTheta
-Contributors: Logan Evans, Cameron Evans, and Andrew Schwartzmeyer
+### Team: BigTheta
+### Contributors: Logan Evans, Cameron Evans, and Andrew Schwartzmeyer
+### Hackathon: [EECS WSU Hackathon](https://wsuhackathon.eventbrite.com/)
 
 This app was an attempt to make an astronomical observation log for
 use in completing
