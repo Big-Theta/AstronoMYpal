@@ -5,9 +5,16 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.ListView;
+
+import com.bigtheta.astronomypal.MainMenu.MainMenuFragment;
 
 import com.bigtheta.astronomypal.MainMenu.MainMenuItemDetailFragment;
+
+import java.util.ArrayList;
 
 
 /**
@@ -52,9 +59,19 @@ public class MainActivity extends FragmentActivity
             //((ItemListFragment) getSupportFragmentManager()
             //        .findFragmentById(R.id.main_menu_item_list))
             //        .setActivateOnItemClick(true);
-            Fragment mainMenuFragment = getSupportFragmentManager()
-                    .findFragmentById(R.id.main_menu_item_list);
+            //Fragment mainMenuFragment = getSupportFragmentManager()
+            //        .findFragmentById(R.id.main_menu_item_list);
+            //MainMenuFragment mainMenu = new MainMenuFragment();
         }
+        ArrayList<String> listItems = new ArrayList<String>();
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listItems);
+        ListView lv = (ListView) findViewById(R.id.messier_list);
+        lv.setAdapter(adapter);
+        //lv.setFilterEnabled(true);
+        //put items in the listItems
+        adapter.notifyDataSetChanged();
+
 
         // TODO: If exposing deep links into your app, handle intents here.
     }
@@ -84,6 +101,10 @@ public class MainActivity extends FragmentActivity
             detailIntent.putExtra(MainMenuItemDetailFragment.ARG_ITEM_ID, id);
             startActivity(detailIntent);
         }
+    }
+    public void search(View view) {
+        String query = ((EditText) findViewById(R.id.search_box)).getText().toString();
+        ((TextView) findViewById(R.id.LoganHackTextView)).setText(query);
     }
     public void LoganHackTime(View view) {
         ((TextView) findViewById(R.id.LoganHackTextView)).setText("And God killed another puppy.");

@@ -21,18 +21,20 @@
     http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
     -->
 
+    <ListView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/messier_list"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:smoothScrollbar="true" />
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:id="@id/main_menu_fragment_container">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Start a New Session"
-            android:id="@+id/new_session_button" />
 
         <Button
             android:layout_width="match_parent"
@@ -54,6 +56,21 @@
             android:text="Achievements for real"
             android:id="@+id/achievements_button"
             android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/search_box"
+            android:hint="Messier object to find" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/search_button"
+            android:onClick="search" />
 
     </LinearLayout>
     <FrameLayout
